@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--include ../../data/data-->
+<html lang="ru">
+  <head>
+    <title>Михаил Зотов | Фронтенд разработчик</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Сайт визитка — портфолио">
+    <link rel="preload" href="fonts/opensans-400.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container"><a class="header__logo" href="index.html" aria-label="Переход на главную">Портфолио</a>
+          <nav class="header__navigation">
+            <button class="header__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false"><span></span></button>
+            <div class="header__menu">
+              <ul class="header__list">
+                <li class="header__list-item"><a class="header__link" href="#about">
+                    <svg class="header__icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-aboutme"></use>
+                    </svg><span>Oбо мне</span></a></li>
+                <li class="header__list-item"><a class="header__link" href="#skills">
+                    <svg class="header__icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-skills"></use>
+                    </svg><span>Навыки</span></a></li>
+                <li class="header__list-item"><a class="header__link" href="#projects">
+                    <svg class="header__icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-portfolio"></use>
+                    </svg><span>Проекты</span></a></li>
+                <li class="header__list-item"><a class="header__link" href="#contacts">
+                    <svg class="header__icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-contacts"></use>
+                    </svg><span>Контакты</span></a></li>
+              </ul>
+              <ul class="social header__social social--theme-white">
+                <li class="social__item"><a class="social__link" href="https://github.com/mikhail7mz/" aria-label="Перейти на github.">
+                    <svg class="social__icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-github"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="https://t.me/mikhail7mz/" aria-label="Перейти в telegram.">
+                    <svg class="social__icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                    </svg></a></li>
+                <li class="social__item"><a class="social__link" href="https://api.whatsapp.com/send?phone=79951140650" aria-label="Перейти в whatsup.">
+                    <svg class="social__icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-whatsup"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section class="about" id="about">
+          <div class="container">
+            <h2 class="about__heading heading">О себе</h2>
+            <div class="about__avatar">
+              <picture><img class="about__image" src="img/content/avatar.jpg" srcset="img/content/avatar@2x.jpg 2x" width="214" height="214" alt="Моя фотография">
+              </picture>
+              <p class="about__profession">Фронтенд-разработчик</p>
+              <p class="about__name">Михаил Зотов</p>
+            </div>
+            <div class="about__description"><p>Приветствую вас на своей странице-портфолио!</p><p>Верстаю как фиксированные так и адаптивные сайты в том числе с ретинизацией и сжатием изображений. Активно применяю в своей работе препроцессоры и шаблонизаторы. В частности pug, twig, sass. Умею создавать динамические страницы с помощью JavaScript. А также знаком с автоматизацией сборки проекта на gulp.</p><p>Ниже вы можете увидеть примеры моих работ с описанием моей роли в них.</p></div>
+          </div>
+        </section>
+        <section class="skills" id="skills">
+          <div class="container">
+            <h2 class="skills__heading heading">навыки</h2>
+            <div class="skills__group">
+              <svg class="skills__icon" width="50" height="70" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-html5"></use>
+              </svg>
+              <h3 class="skills__subheading subheading">HTML & CSS</h3>
+              <ul class="skills__list">
+                <li class="skills__item">Семантическая верстка</li>
+                <li class="skills__item">БЭМ</li>
+                <li class="skills__item">Flexbox, Grid</li>
+                <li class="skills__item">Адаптивный дизайн</li>
+                <li class="skills__item">Оптимизация графики</li>
+                <li class="skills__item">Оптимизация производительности</li>
+                <li class="skills__item">Sass, LESS</li>
+                <li class="skills__item">Gulp</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <svg class="skills__icon" width="50" height="50" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-js"></use>
+              </svg>
+              <h3 class="skills__subheading subheading">Javascript</h3>
+              <ul class="skills__list">
+                <li class="skills__item">ES2015+</li>
+                <li class="skills__item">ES6 Модули</li>
+                <li class="skills__item">Fetch API</li>
+                <li class="skills__item">Debounce</li>
+                <li class="skills__item">NoUiSlider.js</li>
+                <li class="skills__item">Swiper.js</li>
+                <li class="skills__item">Pristine.js</li>
+                <li class="skills__item">Leaflet.js</li>
+              </ul>
+            </div>
+            <div class="skills__group">
+              <svg class="skills__icon" width="50" height="45" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-tools"></use>
+              </svg>
+              <h3 class="skills__subheading subheading">Tools</h3>
+              <ul class="skills__list">
+                <li class="skills__item">Git</li>
+                <li class="skills__item">Figma</li>
+                <li class="skills__item">Gulp</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="projects" id="projects">
+          <div class="container">
+            <h2 class="projects__heading heading">Проекты</h2>
+            <div class="projects__wrapper swiper">
+              <ul class="projects__list swiper-wrapper">
+                <li class="projects__item swiper-slide">
+                  <div class="projects__picture">
+                    <picture><img src="img/content/sedona.png" srcset="img/content/sedona@2x.png 2x" width="256" height="160" alt="Фрагмент сайта Sedona на экранах трёх размеров.">
+                    </picture>
+                  </div>
+                  <div class="projects__info">
+                    <h3 class="projects__title">Седона</h3>
+                    <p class="projects__description">Сайт туристического города Седона.</p>
+                    <p class="projects__tags">Gulp, BEM, SASS, Grid, Flexbox, Mobile first, Pixel perfect, Retina, SVG-спрайт, Адаптивный дизайн, JavaScript</p><a class="projects__button" href="sedona.html" data-open-modal="project">Подробнее</a>
+                  </div>
+                </li>
+                <li class="projects__item swiper-slide">
+                  <div class="projects__picture">
+                    <picture><img src="img/content/cat-energy.png" srcset="img/content/cat-energy@2x.png 2x" width="256" height="160" alt="Фрагмент сайта Cat Energy на экранах трёх размеров.">
+                    </picture>
+                  </div>
+                  <div class="projects__info">
+                    <h3 class="projects__title">Кэт Энерджи</h3>
+                    <p class="projects__description">Онлайн магазин функционального питания для&nbsp;котов.</p>
+                    <p class="projects__tags">Gulp, BEM, Twig, SASS, JSON, Grid, Flexbox, Mobile first, Pixel perfect, Retina, SVG-спрайт, Адаптивный дизайн, JavaScript</p><a class="projects__button" href="cat-energy.html" data-open-modal="project">Подробнее</a>
+                  </div>
+                </li>
+                <li class="projects__item swiper-slide">
+                  <div class="projects__picture">
+                    <picture><img src="img/content/project.png" srcset="img/content/project@2x.png 2x" width="256" height="160" alt="Фрагмент сайта Mishka на экранах трёх размеров.">
+                    </picture>
+                  </div>
+                  <div class="projects__info">
+                    <h3 class="projects__title">Мишка</h3>
+                    <p class="projects__description">Онлайн магазин товаров ручной работы.</p>
+                    <p class="projects__tags">Gulp, BEM, Twig, SASS, JSON, Grid, Flexbox, Mobile first, Pixel perfect, Retina, SVG-спрайт, Адаптивный дизайн, JavaScript</p><a class="projects__button" href="mishka.html" data-open-modal="project">Подробнее</a>
+                  </div>
+                </li>
+                <li class="projects__item swiper-slide">
+                  <div class="projects__picture">
+                    <picture><img src="img/content/project.png" srcset="img/content/project@2x.png 2x" width="256" height="160" alt="Фрагмент сайта Kekstagram.">
+                    </picture>
+                  </div>
+                  <div class="projects__info">
+                    <h3 class="projects__title">Кекстаграм</h3>
+                    <p class="projects__description">Аналог популярной социальной сети для обмена фотографиями и видео.</p>
+                    <p class="projects__tags">ES2015+, ES6 Модули, Fetch API, JSON, Debounce, NoUiSlider, Pristine.js</p><a class="projects__button" href="kekstagram.html" data-open-modal="project">Подробнее</a>
+                  </div>
+                </li>
+                <li class="projects__item swiper-slide">
+                  <div class="projects__picture">
+                    <picture><img src="img/content/project.png" srcset="img/content/project@2x.png 2x" width="256" height="160" alt="Фрагмент сайта Cat Energy на экранах трёх размеров.">
+                    </picture>
+                  </div>
+                  <div class="projects__info">
+                    <h3 class="projects__title">Кексобукинг</h3>
+                    <p class="projects__description">Сайт поиска объявлений.</p>
+                    <p class="projects__tags">ES2015+, ES6 Модули, Fetch API, JSON, Debounce, NoUiSlider, Pristine.js, Leaflet</p><a class="projects__button" href="keksobooking.html" data-open-modal="project">Подробнее</a>
+                  </div>
+                </li>
+                <li class="projects__item swiper-slide">
+                  <div class="projects__picture">
+                    <picture><img src="img/content/project.png" srcset="img/content/project@2x.png 2x" width="256" height="160" alt="Фрагмент сайта Cryptostar на экранах трёх размеров.">
+                    </picture>
+                  </div>
+                  <div class="projects__info">
+                    <h3 class="projects__title">Криптостар</h3>
+                    <p class="projects__description">Cервис покупки криптовалюты KEKS онлайн и за наличный расчёт.</p>
+                    <p class="projects__tags">ES2015+, ES6 Модули, Fetch API, JSON, Local Storage, Debounce, Pristine.js, Leaflet</p><a class="projects__button" href="cryptostar.html" data-open-modal="project">Подробнее</a>
+                  </div>
+                </li>
+                <li class="projects__item swiper-slide">
+                  <div class="projects__picture">
+                    <picture><img src="img/content/project.png" srcset="img/content/project@2x.png 2x" width="256" height="160" alt="Фрагмент сайта Cryptostar на экранах трёх размеров.">
+                    </picture>
+                  </div>
+                  <div class="projects__info">
+                    <h3 class="projects__title">Drink &amp; Go</h3>
+                    <p class="projects__description">Интернет-магазин кофейных напитков.</p>
+                    <p class="projects__tags">Gulp, BEM, SASS, Grid, Flexbox, Mobile first, Pixel perfect, Retina, SVG-спрайт, Адаптивный дизайн, JavaScript, ES2015+, ES6 Модули, NoUiSlider</p><a class="projects__button" href="drink-and-go.html" data-open-modal="project">Подробнее</a>
+                  </div>
+                </li>
+              </ul>
+              <div class="projects__controls">
+                <button class="projects__toggle projects__toggle--prev" type="button" aria-label="Перейти к предыдущему слайду.">
+                  <svg class="projects__icon" width="10" height="18" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+                <div class="projects__pagination"></div>
+                <button class="projects__toggle projects__toggle--next" type="button" aria-label="Перейти к следующему слайду.">
+                  <svg class="projects__icon" width="10" height="18" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts" id="contacts">
+          <div class="container">
+            <h2 class="contacts__heading heading">контакты</h2>
+            <p class="contacts__entry"><a class="contacts__link" href="mailto:info@mikhailzotov.ru">
+                <svg class="contacts__icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg><span>hello@mikhailzotov.pro</span></a></p>
+            <ul class="social contacts__social">
+              <li class="social__item"><a class="social__link" href="https://github.com/mikhail7mz/" aria-label="Перейти на github.">
+                  <svg class="social__icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link" href="https://t.me/mikhail7mz/" aria-label="Перейти в telegram.">
+                  <svg class="social__icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                  </svg></a></li>
+              <li class="social__item"><a class="social__link" href="https://api.whatsapp.com/send?phone=79951140650" aria-label="Перейти в whatsup.">
+                  <svg class="social__icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-whatsup"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <div class="modal modal--preload modal-project" data-modal="project">
+        <div class="modal__wrapper">
+          <div class="modal__overlay" data-close-modal></div>
+          <div class="modal__content">
+            <header class="modal__header">
+              <h2 class="modal__heading heading">Седона</h2>
+              <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-modal>
+                <svg class="modal__close-btn-icon" width="15" height="15" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+            </header>
+            <div class="modal__body">
+              <p>Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка Обычная модалка</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js" type="module"></script>
+  </body>
+</html>
